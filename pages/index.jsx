@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import InfoBar from "../components/InfoBar";
-import PhilosophySection from "../components/Philosophy";
+import PhilosophySection from "../components/Philosophy.jsx";
 
 const Index = () => {
   return (
