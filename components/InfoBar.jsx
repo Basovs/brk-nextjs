@@ -26,7 +26,7 @@ const InfoBar = () => {
           </Article>
         </Card>
         <Card>
-          <img src="/facebookIcon.svg" alt="" />
+          <img src="/facebookIcon.svg" alt="Facebook us" />
           <Article>
             <h2>Facebook</h2>
             <p>Seko mums</p>
