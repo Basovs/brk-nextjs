@@ -1,23 +1,25 @@
 import Head from "next/head";
 import styled from "styled-components";
 import Layout from "../components/Layout";
+import Hero from "../components/Hero";
+import InfoBar from "../components/InfoBar";
+import PhilosophySection from "../components/philosophy";
 
 const Index = () => {
   return (
-    <App>
+    <>
       <Head>
-        <title>BsRK</title>
+        <title>BRK</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout />
-    </App>
+      <Layout>
+        <Hero />
+        <InfoBar />
+        <PhilosophySection />
+      </Layout>
+    </>
   );
 };
 
 export default Index;
-
-const App = styled.div`
-  background-color: red;
-  height: 100vh;
-`;

@@ -21,6 +21,10 @@ const Layout = props => {
           padding: 0;
           margin: 0;
         }
+        a {
+          text-decoration: none;
+          color: #000;
+        }
       `}</style>
     </Component>
   );
@@ -31,5 +35,4 @@ export default Layout;
 const Component = styled.div`
   inline-size: 100%;
   min-block-size: 100vh;
-  background-color: yellow;
 `;
