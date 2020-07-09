@@ -5,7 +5,6 @@ const Layout = props => {
   return (
     <Component>
       <Nav />
-
       <main>{props.children}</main>
 
       <style jsx global>{`
