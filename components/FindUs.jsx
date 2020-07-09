@@ -6,7 +6,7 @@ const OfferSection = () => {
     <Component>
       <Title
         text="KĀ MŪS ATRAST"
-        title="Jēkabpils, Madonas iela 27"
+        title="Jēkabpils, Madonas 27"
         shadow="KĀ MŪS ATRAST"
       />
     </Component>
