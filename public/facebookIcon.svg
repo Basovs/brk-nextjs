@@ -1,9 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43">
-  <g id="facebookIcon" transform="translate(-1406.921 -42.145)">
-    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(1406.921 42.145)" fill="#f7f7f7" stroke="#a3a3a3" stroke-width="1.5">
-      <circle cx="21.5" cy="21.5" r="21.5" stroke="none"/>
-      <circle cx="21.5" cy="21.5" r="20.75" fill="none"/>
-    </g>
-    <text id="_" data-name="" transform="translate(1422.922 72.785)" fill="#222" font-size="22" font-family="FontAwesome5Brands-Regular, 'Font Awesome 5 Brands'"><tspan x="0" y="0"></tspan></text>
-  </g>
+  <path id="facebookIcon" d="M6.3,36.7A21.5,21.5,0,1,1,36.7,6.3,21.5,21.5,0,1,1,6.3,36.7ZM2.148,21.5A19.352,19.352,0,1,0,21.5,2.148,19.374,19.374,0,0,0,2.148,21.5ZM19.309,33.391v-9.84H16v-3.91h3.308V16.547a5.094,5.094,0,0,1,1.375-3.8,4.982,4.982,0,0,1,3.652-1.354,21.318,21.318,0,0,1,3.008.172v3.48H25.282a1.994,1.994,0,0,0-1.589.516,2.2,2.2,0,0,0-.344,1.375v2.707H27l-.516,3.91H23.349v9.84Z" fill="#a3a3a3"/>
 </svg>

@@ -5,28 +5,28 @@ const InfoBar = () => {
     <Component>
       <Wrapper>
         <Card>
-          <img src="./phoneIcon.svg" alt="Call us" />
+          <img src="/phoneIcon.svg" alt="Call us" />
           <Article>
             <h2>+371 2 777 777</h2>
             <p>P-PK 08:00-17:00</p>
           </Article>
         </Card>
         <Card>
-          <img src="./mapIcon.svg" alt="Find us" />
+          <img src="/mapIcon.svg" alt="Find us" />
           <Article>
             <h2>Madonas iela 27</h2>
             <p>Jēkabpils</p>
           </Article>
         </Card>
         <Card>
-          <img src="mailIcon.svg" alt="Mail us" />
+          <img src="/mailIcon.svg" alt="Mail us" />
           <Article>
             <h2>info@brk.lv</h2>
             <p>Raksti mums</p>
           </Article>
         </Card>
         <Card>
-          <img src="./facebookIcon.svg" alt="" />
+          <img src="/facebookIcon.svg" alt="" />
           <Article>
             <h2>Facebook</h2>
             <p>Seko mums</p>

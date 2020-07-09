@@ -1,9 +1,14 @@
 import styled from "styled-components";
 import Nav from "./Nav";
+import Head from "next/head";
 
 const Layout = props => {
   return (
     <Component>
+      <Head>
+        <meta name="Description" content="A BRK project - JBB" />
+      </Head>
+
       <Nav />
 
       <main>{props.children}</main>
