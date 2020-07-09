@@ -19,7 +19,11 @@ const PhilosophySection = () => {
           </p>
           <Btn href="/filazofija">LASĪT VAIRĀK</Btn>
         </Article>
-        <ImgGrid></ImgGrid>
+        <ImgGrid>
+          <BigPic />
+          <MedPic />
+          <SmallPic />
+        </ImgGrid>
       </Wrapper>
     </Component>
   );
@@ -29,6 +33,9 @@ export default PhilosophySection;
 
 const Component = styled.section`
   padding: 100px 0;
+
+  display: flex;
+  justify-content: center;
 `;
 const Wrapper = styled.div`
   inline-size: 100%;
@@ -36,6 +43,7 @@ const Wrapper = styled.div`
 
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 `;
 const Article = styled.article`
   inline-size: 100%;
@@ -56,4 +64,51 @@ const Article = styled.article`
     line-height: 30px;
   }
 `;
-const ImgGrid = styled.div``;
+const ImgGrid = styled.div`
+  inline-size: 555px;
+  block-size: 555px;
+  display: grid;
+  grid-template-areas:
+    "big big big big big big"
+    "big big big big big big"
+    "big big big big big big"
+    "med med med med big big"
+    "med med med med smallPic smallPic"
+    "med med med med smallPic smallPic";
+  grid-template-rows: 30px 30px 30px 30px 30px 30px;
+  grid-template-columns: 30px 30px 30px 30px 30px 30px;
+`;
+
+const BigPic = styled.div`
+  grid-area: big;
+  inline-size: 100%;
+  block-size: 100%;
+
+  background-image: url("./bigPic.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+`;
+const MedPic = styled.div`
+  grid-area: med;
+  inline-size: 100%;
+  block-size: 100%;
+
+  background-image: url("./mediumPic.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+`;
+const SmallPic = styled.div`
+  grid-area: smallPic;
+  inline-size: 100%;
+  block-size: 100%;
+
+  background-image: url("./smallPic.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+`;
