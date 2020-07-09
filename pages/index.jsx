@@ -2,13 +2,13 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import InfoBar from "../components/InfoBar";
-import PhilosophySection from "../components/Philosophy.jsx";
+import PhilosophySection from "../components/Philosophy";
 
 const Index = () => {
   return (
     <>
       <Head>
-        <title>BRK</title>
+        <title>BRKs</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
