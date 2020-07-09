@@ -28,7 +28,7 @@ const PhilosophySection = () => {
 export default PhilosophySection;
 
 const Component = styled.section`
-  padding: 20px 0;
+  padding: 50px 30px;
 
   display: flex;
   justify-content: center;
@@ -41,16 +41,21 @@ const Wrapper = styled.div`
   max-inline-size: 1110px;
 
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1130px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 const Article = styled.article`
   inline-size: 100%;
+  max-inline-size: 540px;
   background-color: #fff;
-  padding: 40px 0 64px 20px;
-
+  padding: 0 0 50px 0;
   @media screen and (min-width: 1130px) {
     max-inline-size: 49%;
+    padding: 40px 0 64px 20px;
   }
 
   h2 {
@@ -79,14 +84,17 @@ const ImgGrid = styled.div`
 
   @media screen and (min-width: 500px) {
     block-size: 400px;
+    inline-size: 500px;
   }
 
   @media screen and (min-width: 670px) {
     block-size: 500px;
+    inline-size: 550px;
   }
 
   @media screen and (min-width: 900px) {
-    block-size: 600px;
+    block-size: 500px;
+    inline-size: 600px;
   }
 
   @media screen and (min-width: 1130px) {

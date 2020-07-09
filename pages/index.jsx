@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import InfoBar from "../components/InfoBar";
 import PhilosophySection from "../components/philosophy";
+import OfferSection from "../components/OfferSection";
+import FindUs from "../components/FindUs";
 
 const Index = () => {
   return (
@@ -16,6 +18,8 @@ const Index = () => {
         <Hero />
         <InfoBar />
         <PhilosophySection />
+        <OfferSection />
+        <FindUs />
       </Layout>
     </>
   );
