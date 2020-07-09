@@ -17,13 +17,9 @@ const PhilosophySection = () => {
             nulla pariatur.Consectetur adipisicing elit Lorem ipsum dolor sit
             amet, consectetur adipisicing
           </p>
-          <Btn href="/filazofija">LASĪT VAIRĀK</Btn>
+          <Btn href="/philosophy">LASĪT VAIRĀK</Btn>
         </Article>
-        <ImgGrid>
-          <BigPic />
-          <MedPic />
-          <SmallPic />
-        </ImgGrid>
+        <ImgGrid />
       </Wrapper>
     </Component>
   );
@@ -32,24 +28,31 @@ const PhilosophySection = () => {
 export default PhilosophySection;
 
 const Component = styled.section`
-  padding: 100px 0;
+  padding: 20px 0;
 
   display: flex;
   justify-content: center;
+  @media screen and (min-width: 1130px) {
+    padding: 100px 0;
+  }
 `;
 const Wrapper = styled.div`
   inline-size: 100%;
   max-inline-size: 1110px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 `;
 const Article = styled.article`
   inline-size: 100%;
-  max-inline-size: 555px;
   background-color: #fff;
-  padding: 40px 16px 64px 50px;
+  padding: 40px 0 64px 20px;
+
+  @media screen and (min-width: 1130px) {
+    max-inline-size: 49%;
+  }
+
   h2 {
     font-size: 32px;
     line-height: 40px;
@@ -59,56 +62,86 @@ const Article = styled.article`
     font-weight: 800;
   }
   p:nth-child(3) {
-    padding: 40px 0 50px 0;
-    font-size: 16px;
+    padding: 40px 0px 50px 0;
+    font-size: 14px;
     line-height: 30px;
   }
 `;
 const ImgGrid = styled.div`
-  inline-size: 555px;
-  block-size: 555px;
-  display: grid;
-  grid-template-areas:
-    "big big big big big big"
-    "big big big big big big"
-    "big big big big big big"
-    "med med med med big big"
-    "med med med med smallPic smallPic"
-    "med med med med smallPic smallPic";
-  grid-template-rows: 30px 30px 30px 30px 30px 30px;
-  grid-template-columns: 30px 30px 30px 30px 30px 30px;
-`;
-
-const BigPic = styled.div`
-  grid-area: big;
   inline-size: 100%;
-  block-size: 100%;
+  block-size: 300px;
 
-  background-image: url("./bigPic.jpg");
+  background-image: url("./pics.jpg");
   background-color: #cccccc; /* Used if the image is unavailable */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-`;
-const MedPic = styled.div`
-  grid-area: med;
-  inline-size: 100%;
-  block-size: 100%;
 
-  background-image: url("./mediumPic.jpg");
-  background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-`;
-const SmallPic = styled.div`
-  grid-area: smallPic;
-  inline-size: 100%;
-  block-size: 100%;
+  @media screen and (min-width: 500px) {
+    block-size: 400px;
+  }
 
-  background-image: url("./smallPic.jpg");
-  background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  @media screen and (min-width: 670px) {
+    block-size: 500px;
+  }
+
+  @media screen and (min-width: 900px) {
+    block-size: 600px;
+  }
+
+  @media screen and (min-width: 1130px) {
+    max-inline-size: 49%;
+  }
 `;
+// const ImgGrid = styled.div`
+//   inline-size: 50%;
+//   block-size: 555px;
+//   display: grid;
+//   grid-template-areas:
+//     ". lar lar lar lar lar"
+//     ". lar lar lar lar lar"
+//     ". lar lar lar lar lar"
+//     "medi medi medi medi smalish smalish"
+//     "medi medi medi medi smalish smalish"
+//     "medi medi medi medi smalish smalish";
+//   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+//   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+// `;
+
+// const BigPic = styled.div`
+//   grid-area: lar;
+//   inline-size: 100%;
+//   block-size: 100%;
+
+//   background-image: url("./bigPic.jpg");
+//   background-color: #cccccc; /* Used if the image is unavailable */
+//   background-position: center; /* Center the image */
+//   background-repeat: no-repeat; /* Do not repeat the image */
+//   background-size: cover; /* Resize the background image to cover the entire container */
+// `;
+// const MedPic = styled.div`
+//   grid-area: medi;
+//   inline-size: 100%;
+//   block-size: 100%;
+
+//   background-image: url("./mediumPic.jpg");
+//   background-color: #cccccc; /* Used if the image is unavailable */
+//   background-position: center; /* Center the image */
+//   background-repeat: no-repeat; /* Do not repeat the image */
+//   background-size: cover; /* Resize the background image to cover the entire container */
+// `;
+// const SmallPic = styled.div`
+//   grid-area: smalish;
+//   inline-size: 100%;
+//   block-size: 100%;
+
+//   margin: -200px -200px;
+//   justify-self: center;
+//   align-self: center;
+
+//   background-image: url("./smallPic.jpg");
+//   background-color: #cccccc; /* Used if the image is unavailable */
+//   background-position: center; /* Center the image */
+//   background-repeat: no-repeat; /* Do not repeat the image */
+//   background-size: cover; /* Resize the background image to cover the entire container */
+// `;

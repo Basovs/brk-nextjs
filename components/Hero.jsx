@@ -25,7 +25,7 @@ const Hero = () => {
 export default Hero;
 
 const Component = styled.section`
-  block-size: 700px;
+  block-size: 900px;
   background-image: url("./heroImg.jpg");
   background-color: #cccccc; /* Used if the image is unavailable */
   background-position: center; /* Center the image */
@@ -36,6 +36,7 @@ const Component = styled.section`
   transition: all 0.2s ease;
   @media screen and (min-width: 868px) {
     margin: 0 0 0 60px;
+    block-size: 700px;
   }
 `;
 const Article = styled.article`
@@ -46,14 +47,26 @@ const Article = styled.article`
   inline-size: 100%;
   max-inline-size: 810px;
   background-color: #fff;
-  padding: 40px 50px 64px;
+  padding: 20px 20px 64px;
+
+  @media screen and (min-width: 414px) {
+    padding: 40px 50px 64px;
+  }
+
   h1 {
-    font-size: 60px;
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 40px;
+    @media screen and (min-width: 600px) {
+      font-size: 60px;
+    }
   }
   p {
-    padding: 40px 0 50px 0;
-    font-size: 18px;
+    padding: 20px 0 50px 0;
+    font-size: 16px;
     line-height: 30px;
+    @media screen and (min-width: 600px) {
+      font-size: 18px;
+      padding: 40px 0 50px 0;
+    }
   }
 `;

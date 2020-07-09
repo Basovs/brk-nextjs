@@ -27,6 +27,10 @@ const InfoBar = () => {
         </Card>
         <Card>
           <img src="./facebookIcon.svg" alt="" />
+          <Article>
+            <h2>Facebook</h2>
+            <p>Seko mums</p>
+          </Article>
         </Card>
       </Wrapper>
     </Component>
@@ -36,25 +40,36 @@ const InfoBar = () => {
 export default InfoBar;
 
 const Component = styled.section`
-  block-size: 130px;
   background-color: #f7f7f7;
-
+  padding: 30px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 `;
 const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  inline-size: 100%;
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: repeat(1, minmax(250px, 267.5px));
+  justify-content: center;
   max-inline-size: 1110px;
+  padding: 0 20px;
+
+  @media screen and (min-width: 414px) {
+    inline-size: 100%;
+  }
+
+  @media screen and (min-width: 575px) {
+    grid-template-columns: repeat(2, minmax(250px, 267.5px));
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1110px) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 267.5px));
+  }
 `;
 const Card = styled.div`
   display: flex;
-  margin: 0 15px;
 
   img {
     margin: 0 30px 0 0;

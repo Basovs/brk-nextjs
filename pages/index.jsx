@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import InfoBar from "../components/InfoBar";
-import PhilosophySection from "../components/philosophy";
+import PhilosophySection from "../components/Philosophy";
 
 const Index = () => {
   return (
