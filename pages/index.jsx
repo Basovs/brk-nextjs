@@ -10,6 +10,7 @@ const Index = () => {
       <Head>
         <title>BRK</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="Description" content="A BRK project - JBB" />
       </Head>
 
       <Layout>
