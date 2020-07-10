@@ -5,7 +5,7 @@ const PhilosophySection = () => {
   return (
     <Component>
       <Wrapper>
-        <Article>
+        <Article className="animate__animated animate__bounce">
           <p>FILOZOFIJA</p>
           <h2>We Build Our Projects With Your Dreams Project And Ideas.</h2>
           <p>
