@@ -25,5 +25,5 @@ export default Partners;
 
 const Component = styled.section`
   background-color: #f7f7f7;
-  padding: 30px;
+  padding: 50px 30px;
 `;

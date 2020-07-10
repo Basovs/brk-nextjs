@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import Link from "next/link";
 import Btn from "./Btn";
+import CarouselSingle from "./CarouselSingle";
 
 const Hero = () => {
   return (
     <Component>
+      <CarouselSingle />
       <Article>
         <h1>Pārdošanas teksts</h1>
         <p>
@@ -25,12 +26,12 @@ const Hero = () => {
 export default Hero;
 
 const Component = styled.section`
-  block-size: 900px;
+  /* block-size: 900px;
   background-image: url("./heroImg.jpg");
   background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center;
+  /*background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 
   position: relative;
   transition: all 0.2s ease;
