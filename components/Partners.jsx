@@ -1,17 +1,12 @@
 import styled from "styled-components";
 import Title from "./Title";
-import Siema from "siema";
+import Carousel from "./Carousel";
 
-if (typeof document !== "undefined") {
-  const mySiema = new Siema({ perPage: 4 });
+// To check document before initializing
 
-  document
-    .querySelector(".prev")
-    .addEventListener("click", () => mySiema.prev());
-  document
-    .querySelector(".next")
-    .addEventListener("click", () => mySiema.prev());
-}
+// if (typeof document !== "undefined") {
+
+// }
 
 const Partners = () => {
   return (
@@ -21,26 +16,7 @@ const Partners = () => {
         text="SADARBĪBAS PARTNERI"
         title="Ar ko mēs sadarbojamies"
       />
-
-      <div class="siema">
-        <div>
-          <img src="/first.jpg" alt="" />
-        </div>
-        <div>
-          <img src="/second.jpg" alt="" />
-        </div>
-        <div>
-          <img src="/third.jpg" alt="" />
-        </div>
-        <div>
-          <img src="/fourth.jpg" alt="" />
-        </div>
-        <div>
-          <img src="/fifth.jpg" alt="" />
-        </div>
-      </div>
-      <button className="prev">This is PREV button</button>
-      <button className="next">Thsis is NEXT button</button>
+      <Carousel />
     </Component>
   );
 };

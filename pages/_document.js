@@ -13,7 +13,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          {/* <script src="../js/siema.min.js"></script> */}
         </body>
       </Html>
     );
