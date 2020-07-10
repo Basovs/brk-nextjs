@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Title from "./Title";
+import MapAndInfo from "./MapAndInfo";
 
 const OfferSection = () => {
   return (
@@ -9,6 +10,7 @@ const OfferSection = () => {
         title="Jēkabpils, Madonas 27"
         shadow="KĀ MŪS ATRAST"
       />
+      <MapAndInfo />
     </Component>
   );
 };
@@ -16,5 +18,5 @@ const OfferSection = () => {
 export default OfferSection;
 
 const Component = styled.section`
-  padding: 30px;
+  padding: 0 30px;
 `;
