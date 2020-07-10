@@ -28,9 +28,9 @@ const Component = styled.section`
   block-size: 900px;
   background-image: url("./heroImg.jpg");
   background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   position: relative;
   transition: all 0.2s ease;

@@ -16,5 +16,6 @@ const Partners = () => {
 export default Partners;
 
 const Component = styled.section`
+  background-color: #f7f7f7;
   padding: 30px;
 `;

@@ -6,6 +6,7 @@ import PhilosophySection from "../components/philosophy";
 import OfferSection from "../components/OfferSection";
 import FindUs from "../components/FindUs";
 import Partners from "../components/Partners";
+import Footer from "../components/Footer";
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
         <OfferSection />
         <FindUs />
         <Partners />
+        <Footer />
       </Layout>
     </>
   );

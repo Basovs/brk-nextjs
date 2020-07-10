@@ -18,5 +18,14 @@ const OfferSection = () => {
 export default OfferSection;
 
 const Component = styled.section`
-  padding: 0 30px;
+  padding: 0 30px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 1400px) {
+    padding: 0 30px 80px;
+  }
 `;

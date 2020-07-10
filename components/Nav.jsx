@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
+import MainNav from "./MainNav";
 
 const Nav = () => {
   return (
@@ -4598,45 +4599,7 @@ const Nav = () => {
             </svg>
           </Logo>
         </Link>
-        <MainNav>
-          <Ul>
-            <Li>
-              <Link href="/">
-                <a>Sākumlapa</a>
-              </Link>
-            </Li>
-            <Li />
-            <Li>
-              <Link href="/news">
-                <a>Jaunumi</a>
-              </Link>
-            </Li>
-            <Li />
-            <Li>
-              <Link href="/philosophy">
-                <a>Filozofija</a>
-              </Link>
-            </Li>
-            <Li />
-            <Li>
-              <Link href="/offer">
-                <a>Pakalpojumi</a>
-              </Link>
-            </Li>
-            <Li />
-            <Li>
-              <Link href="/portfolio">
-                <a>Portfolio</a>
-              </Link>
-            </Li>
-            <Li />
-            <Li>
-              <Link href="/contact">
-                <a>Kontakti</a>
-              </Link>
-            </Li>
-          </Ul>
-        </MainNav>
+        <MainNav />
         <Search>
           <svg
             id="searchIcon"
@@ -4711,7 +4674,7 @@ export default Nav;
 
 const Component = styled.div`
   inline-size: 100%;
-  block-size: 100px;
+
   background-color: #fff;
 
   display: flex;
@@ -4731,32 +4694,6 @@ const Logo = styled.a`
   flex: 1;
   margin: 10px 0 0;
   cursor: pointer;
-`;
-const MainNav = styled.nav`
-  flex: 10;
-`;
-const Ul = styled.ul`
-  list-style: none;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-`;
-const Li = styled.li`
-  :nth-child(even) {
-    inline-size: 4px;
-    block-size: 4px;
-    background-color: #be1769;
-  }
-  a {
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-    color: #000;
-    padding: 10px 10px;
-  }
 `;
 const Search = styled.div`
   flex: 1;

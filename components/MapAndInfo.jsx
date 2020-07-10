@@ -29,25 +29,40 @@ export default Partners;
 
 const Component = styled.section`
   display: grid;
-  width: 100%;
+  inline-size: 100%;
+  max-inline-size: 1110px;
   grid-template-areas:
     "map"
     "street"
     "hours";
-  grid-template-rows: auto auto auto;
   grid-template-columns: 1fr;
+  grid-template-rows: 260px 260px auto;
+  gap: 30px;
+  @media screen and (min-width: 850px) {
+    grid-template-areas:
+      "map map hours"
+      "map map hours"
+      "map map street"
+      "map map street";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 150px 150px;
+  }
 `;
 const Map = styled.iframe`
   grid-area: map;
+  inline-size: 100%;
+  block-size: 100%;
   border: solid 10px #ebebeb;
 `;
 const Street = styled.iframe`
   grid-area: street;
+  inline-size: 100%;
+  block-size: 100%;
   border: solid 10px #ebebeb;
 `;
 const HoursContainer = styled.div`
   grid-area: hours;
-  inline-size: 50%;
+  inline-size: 40%;
   border: solid 10px #ebebeb;
   padding: 20px 0;
   display: flex;
