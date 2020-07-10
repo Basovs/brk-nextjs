@@ -24,7 +24,10 @@ class OfferBox extends Component {
   render(props) {
     if (this.state.active === true) {
       return (
-        <MyComponent onMouseLeave={this.updateState}>
+        <MyComponent
+          onMouseLeave={this.updateState}
+          style={{ backgroundImage: "url(" + this.props.backgroundImg + ")" }}
+        >
           <Article>
             <h3>{this.props.title}</h3>
             <p>{this.props.text}</p>
@@ -56,7 +59,6 @@ const MyComponent = styled.div`
   justify-content: center;
   align-items: center;
 
-  background-image: url("./first.jpg");
   background-color: #cccccc; /* Used if the image is unavailable */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */

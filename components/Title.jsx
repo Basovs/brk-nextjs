@@ -4,9 +4,9 @@ const TitleComponent = props => {
   return (
     <Component>
       <Wrapper>
+        <Shadow>{props.shadow}</Shadow>
         <Text>{props.text}</Text>
         <Title>{props.title}</Title>
-        <Shadow>{props.shadow}</Shadow>
       </Wrapper>
     </Component>
   );
@@ -22,43 +22,36 @@ const Component = styled.div`
   padding: 50px 0;
 `;
 const Wrapper = styled.div`
-  position: relative;
   display: flex;
   flex-direction: column;
+  transition: all 0.2s ease;
 `;
 const Shadow = styled.h2`
-  position: absolute;
-  top: 0;
-  left: 50%;
+  transition: all 0.2s ease;
   color: #ebebeb;
-  font-size: 44px;
-  line-height: 1px;
-  inline-size: 350px;
-  margin: -4px 0 0 -175px;
-  @media screen and (min-width: 414px) {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0 0 -24px 0;
+
+  @media screen and (min-width: 583px) {
     font-size: 46px;
-    inline-size: 400px;
-    margin: 1px 0 0 -200px;
+    margin: 0 0 -20px 0;
   }
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 691px) {
     font-size: 56px;
-    inline-size: 450px;
-    margin: -2px 0 0 -225px;
+    margin: 0 0 -16px 0;
   }
-  @media screen and (min-width: 700px) {
+  @media screen and (min-width: 805px) {
     font-size: 66px;
-    inline-size: 550px;
-    margin: -9px 0 0 -275px;
+    margin: 0 0 -12px 0;
   }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 922px) {
     font-size: 76px;
-    inline-size: 650px;
-    margin: -14px 0 0 -325px;
+    margin: 0 0 -8px 0;
   }
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 1400px) {
     font-size: 100px;
-    inline-size: 800px;
-    margin: -20px 0 0 -400px;
+    margin: 0 0 0 0;
   }
 `;
 const Text = styled.p`
