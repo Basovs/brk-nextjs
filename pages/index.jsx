@@ -5,6 +5,7 @@ import InfoBar from "../components/InfoBar";
 import PhilosophySection from "../components/philosophy";
 import OfferSection from "../components/OfferSection";
 import FindUs from "../components/FindUs";
+import Partners from "../components/Partners";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
         <PhilosophySection />
         <OfferSection />
         <FindUs />
+        <Partners />
       </Layout>
     </>
   );
