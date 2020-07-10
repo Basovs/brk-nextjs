@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-const Btn = props => {
+const Btn2 = props => {
   return (
     <Link href={props.href}>
       <A>{props.children}</A>
@@ -9,13 +9,13 @@ const Btn = props => {
   );
 };
 
-export default Btn;
+export default Btn2;
 
 const A = styled.a`
   padding: 16px 40px;
-  background-color: #be1769;
+  background-color: transparent;
   color: #fff;
-  border: solid 2px #be1769;
+  border: solid 2px #fff;
   cursor: pointer;
   :hover {
     background-color: #fff;

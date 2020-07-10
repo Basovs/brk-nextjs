@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import Title from "./Title";
+import Btn2 from "./Btn2";
+import OfferBox from "./OfferBox";
+// import Toggle from "./Toggle";
 
 const OfferSection = () => {
   return (
@@ -10,21 +13,62 @@ const OfferSection = () => {
         shadow="PAKALPOJUMI"
       />
       <SelectOffer>
-        <First>
-          <h3>Projektēšana</h3>
-        </First>
-        <Second>
-          <h3>Dokumentācijas</h3>
-        </Second>
-        <Third>
-          <h3>Inženiertīklu projektēšana</h3>
-        </Third>
-        <Fourth>
-          <h3>Pakalpojums nr.4</h3>
-        </Fourth>
-        <Fifth>
-          <h3>Pakalpojums nr.5</h3>
-        </Fifth>
+        <OfferBox
+          title="Projektēšana"
+          text="Sed a metus ante. Aenean id ipsum nec
+          nisi sagittis rhoncus. Aenean est turpis,
+          efficitur in euismod nec, molestie a
+          metus. Donec vehicula rhoncus dui,
+          non porta leo dictum vehicula. Morbi
+          tristique mattis efficitur."
+          btnText="Lasiit vairaak"
+          backgroundImg="./first.jpg"
+        />
+        <OfferBox
+          title="Dokumentācijas"
+          text="Sed a metus ante. Aenean id ipsum nec
+          nisi sagittis rhoncus. Aenean est turpis,
+          efficitur in euismod nec, molestie a
+          metus. Donec vehicula rhoncus dui,
+          non porta leo dictum vehicula. Morbi
+          tristique mattis efficitur."
+          btnText="Lasiit vairaak"
+          backgroundImg="./second.jpg"
+        />
+        <OfferBox
+          title="Inženiertīklu
+          projektēšana"
+          text="Sed a metus ante. Aenean id ipsum nec
+          nisi sagittis rhoncus. Aenean est turpis,
+          efficitur in euismod nec, molestie a
+          metus. Donec vehicula rhoncus dui,
+          non porta leo dictum vehicula. Morbi
+          tristique mattis efficitur."
+          btnText="Lasiit vairaak"
+          backgroundImg="./third.jpg"
+        />
+        <OfferBox
+          title="Pakalpojums nr.4"
+          text="Sed a metus ante. Aenean id ipsum nec
+          nisi sagittis rhoncus. Aenean est turpis,
+          efficitur in euismod nec, molestie a
+          metus. Donec vehicula rhoncus dui,
+          non porta leo dictum vehicula. Morbi
+          tristique mattis efficitur."
+          btnText="Lasiit vairaak"
+          backgroundImg="./fourth.jpg"
+        />
+        <OfferBox
+          title="Pakalpojums nr.5"
+          text="Sed a metus ante. Aenean id ipsum nec
+          nisi sagittis rhoncus. Aenean est turpis,
+          efficitur in euismod nec, molestie a
+          metus. Donec vehicula rhoncus dui,
+          non porta leo dictum vehicula. Morbi
+          tristique mattis efficitur."
+          btnText="Lasiit vairaak"
+          backgroundImg="./fifth.jpg"
+        />
       </SelectOffer>
     </Component>
   );
@@ -39,177 +83,7 @@ const SelectOffer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   justify-content: center;
-`;
-const First = styled.div`
-  block-size: 384px;
-  position: relative;
-  cursor: pointer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-image: url("./first.jpg");
-  background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  ::before {
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    inline-size: 100%;
-    block-size: 100%;
-    z-index: 1;
-  }
-  :hover {
-    ::before {
-      background-color: rgba(190, 23, 105, 0.9);
-    }
-  }
-  h3 {
-    color: #fff;
-    z-index: 2;
-    font-size: 32px;
-    text-align: center;
-  }
-`;
-const Second = styled.div`
-  block-size: 384px;
-  position: relative;
-  cursor: pointer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-image: url("./second.jpg");
-  background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-
-  ::before {
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    inline-size: 100%;
-    block-size: 100%;
-    z-index: 1;
-  }
-  :hover {
-    ::before {
-      background-color: rgba(190, 23, 105, 0.9);
-    }
-  }
-  h3 {
-    color: #fff;
-    z-index: 2;
-    font-size: 32px;
-    text-align: center;
-  }
-`;
-const Third = styled.div`
-  block-size: 384px;
-  position: relative;
-  cursor: pointer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-image: url("./third.jpg");
-  background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-
-  ::before {
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    inline-size: 100%;
-    block-size: 100%;
-    z-index: 1;
-  }
-  :hover {
-    ::before {
-      background-color: rgba(190, 23, 105, 0.9);
-    }
-  }
-  h3 {
-    color: #fff;
-    z-index: 2;
-    font-size: 32px;
-    text-align: center;
-  }
-`;
-const Fourth = styled.div`
-  block-size: 384px;
-  position: relative;
-  cursor: pointer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-image: url("./fourth.jpg");
-  background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-
-  ::before {
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    inline-size: 100%;
-    block-size: 100%;
-    z-index: 1;
-  }
-  :hover {
-    ::before {
-      background-color: rgba(190, 23, 105, 0.9);
-    }
-  }
-  h3 {
-    color: #fff;
-    z-index: 2;
-    font-size: 32px;
-    text-align: center;
-  }
-`;
-const Fifth = styled.div`
-  block-size: 384px;
-  position: relative;
-  cursor: pointer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-image: url("./fifth.jpg");
-  background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-  ::before {
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    inline-size: 100%;
-    block-size: 100%;
-    z-index: 1;
-  }
-  :hover {
-    ::before {
-      background-color: rgba(190, 23, 105, 0.9);
-    }
-  }
-  h3 {
-    color: #fff;
-    z-index: 2;
-    font-size: 32px;
-    text-align: center;
+  @media screen and (min-width: 415px) {
+    grid-template-columns: repeat(auto-fit, minmax(392px, 1fr));
   }
 `;

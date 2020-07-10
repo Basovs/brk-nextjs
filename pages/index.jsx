@@ -12,6 +12,10 @@ const Index = () => {
       <Head>
         <title>BRK</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Description about the company for SEO"
+        ></meta>
       </Head>
 
       <Layout>
