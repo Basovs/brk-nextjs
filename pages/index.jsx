@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>BRKs</title>
+        <title>BRK</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
