@@ -14,7 +14,7 @@ const Partners = () => {
           <p>Ceturtdiena: 8:00-17:00</p>
           <p>Piektdiena: 8:00-17:00</p>
           <p>
-            Sestdiena: <span>Slēgts</span>
+            Sestdiena: <span>Sslēgtss</span>
           </p>
           <p>
             Svētdiena: <span>Slēgts</span>
