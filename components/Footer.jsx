@@ -61,7 +61,7 @@ const Footer = () => {
           SIA „BRK“ © 2020. Visas tiesības aizsargātas / Privātuma Politika /
           Izstrādājs:
         </p>
-        <img src="/kgLogo.svg" alt="KG logo" />
+        <img src="/kgLogo.svg" alt="KG logo" loading="lazy" />
       </Author>
     </>
   );

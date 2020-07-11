@@ -12,7 +12,7 @@ const Hero = () => {
           Curabitur sollicitudin velit sit amet risus pellentesque gravida. In
           hac habitasse platea dictumst. In eu nisi molestie, rhoncus ante eget,
           ornare nunc. Suspendisse cursus dapibus ligula ut placerat. Curabitur
-          sollicitudin veslit sit amet risus pellentesque gravida. In hac
+          sollicitudin velit sit amet risus pellentesque gravida. In hac
           habitasse platea dsictumst. In eu nisi molestie, rhoncus ante eget,
           ornare nunc. Suspendisse cursus dapibus ligula ut placerat. In hac
           habitasse platea dictumst.
