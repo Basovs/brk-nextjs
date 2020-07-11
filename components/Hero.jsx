@@ -5,7 +5,7 @@ import CarouselSingle from "./CarouselSingle";
 const Hero = () => {
   return (
     <Component>
-      <CarouselSingle />
+      <StyledCarouselSingle />
       <Article>
         <h1>Pārdošanas teksts</h1>
         <p>
@@ -26,19 +26,15 @@ const Hero = () => {
 export default Hero;
 
 const Component = styled.section`
-  /* block-size: 900px;
-  background-image: url("./heroImg.jpg");
-  background-color: #cccccc; /* Used if the image is unavailable */
-  /*background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-
   position: relative;
   transition: all 0.2s ease;
   @media screen and (min-width: 868px) {
     margin: 0 0 0 60px;
     block-size: 700px;
   }
+`;
+const StyledCarouselSingle = styled(CarouselSingle)`
+  inline-size: 100%;
 `;
 const Article = styled.article`
   position: absolute;

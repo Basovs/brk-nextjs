@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const MainNav = () => {
   return (
@@ -50,6 +50,10 @@ export default MainNav;
 const Component = styled.nav`
   inline-size: 100%;
   max-inline-size: 980px;
+  display: none;
+  @media screen and (min-width: 1130px) {
+    display: unset;
+  }
 `;
 
 const Ul = styled.ul`

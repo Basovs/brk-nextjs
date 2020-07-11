@@ -9,14 +9,14 @@
   inline-size: 40px;
   block-size: 40px;
   left: -5%;
-  background-color: #fff;
+  background-color: #ebebeb;
 }
 
 .slides .slick-next {
   inline-size: 40px;
   block-size: 40px;
   right: -5%;
-  background-color: #fff;
+  background-color: #ebebeb;
 }
 
 .slides {
@@ -24,10 +24,10 @@
   max-inline-size: 1200px;
   margin: 0 auto;
 }
-.slick-slide > div > div {
-  background-color: #fff;
-  display: flex !important;
-  justify-content: center !important;
-  border: solid 10px #ebebeb;
-  padding: 10px 0;
-}
+// .slick-slide > div > div {
+//   background-color: #fff;
+//   display: flex !important;
+//   justify-content: center !important;
+//   border: solid 10px #ebebeb;
+//   padding: 10px 0;
+// }

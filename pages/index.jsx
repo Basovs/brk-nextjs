@@ -7,6 +7,7 @@ import OfferSection from "../components/OfferSection";
 import FindUs from "../components/FindUs";
 import Partners from "../components/Partners";
 import Footer from "../components/Footer";
+import HumburgerNav from "../components/HumburgerNav";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       </Head>
 
       <Layout>
+        <HumburgerNav />
         <Hero />
         <InfoBar />
         <PhilosophySection />

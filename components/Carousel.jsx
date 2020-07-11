@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import styled from "styled-components";
+import MySlider from "./MySlider";
 
 export default class Responsive extends Component {
   render() {
@@ -34,30 +34,52 @@ export default class Responsive extends Component {
       ],
     };
     return (
-      <Container>
+      <div>
         <Slider {...settings}>
-          <div className="janis">
-            <img src="company1.svg" alt="company1" />
-          </div>
-          <div>
-            <img src="company2.svg" alt="company2" />
-          </div>
-          <div>
-            <img src="company3.svg" alt="company3" />
-          </div>
-          <div>
-            <img src="company4.svg" alt="company4" />
-          </div>
-          <div>
-            <img src="company2.svg" alt="company2" />
-          </div>
-          <div>
-            <img src="company3.svg" alt="company3" />
-          </div>
+          <MySlider
+            url="company1.svg"
+            blockSize="150px"
+            backgroundSize="fit"
+            backgroundColor="#fff"
+            border="solid 10px #ebebeb"
+          />
+          <MySlider
+            url="company2.svg"
+            blockSize="150px"
+            backgroundSize="fit"
+            backgroundColor="#fff"
+            border="solid 10px #ebebeb"
+          />
+          <MySlider
+            url="company3.svg"
+            blockSize="150px"
+            backgroundSize="fit"
+            backgroundColor="#fff"
+            border="solid 10px #ebebeb"
+          />
+          <MySlider
+            url="company4.svg"
+            blockSize="150px"
+            backgroundSize="fit"
+            backgroundColor="#fff"
+            border="solid 10px #ebebeb"
+          />
+          <MySlider
+            url="company2.svg"
+            blockSize="150px"
+            backgroundSize="fit"
+            backgroundColor="#fff"
+            border="solid 10px #ebebeb"
+          />
+          <MySlider
+            url="company3.svg"
+            blockSize="150px"
+            backgroundSize="fit"
+            backgroundColor="#fff"
+            border="solid 10px #ebebeb"
+          />
         </Slider>
-      </Container>
+      </div>
     );
   }
 }
-
-const Container = styled.div``;
