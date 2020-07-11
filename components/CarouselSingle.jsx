@@ -13,27 +13,26 @@ export default class CarouselSingle extends Component {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 7000,
+      arrows: false,
     };
     return (
-      <div>
-        <Slider {...settings}>
-          <StyledMySlider
-            url="./heroImg.jpg"
-            blockSize="700px"
-            backgroundSize="cover"
-          />
-          <StyledMySlider
-            url="./heroImg.jpg"
-            blockSize="700px"
-            backgroundSize="cover"
-          />
-          <StyledMySlider
-            url="./heroImg.jpg"
-            blockSize="700px"
-            backgroundSize="cover"
-          />
-        </Slider>
-      </div>
+      <Slider {...settings}>
+        <StyledMySlider
+          url="./heroImg.jpg"
+          blockSize="700px"
+          backgroundSize="cover"
+        />
+        <StyledMySlider
+          url="./heroImg.jpg"
+          blockSize="700px"
+          backgroundSize="cover"
+        />
+        <StyledMySlider
+          url="./heroImg.jpg"
+          blockSize="700px"
+          backgroundSize="cover"
+        />
+      </Slider>
     );
   }
 }

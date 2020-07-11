@@ -5,7 +5,7 @@ import CarouselSingle from "./CarouselSingle";
 const Hero = () => {
   return (
     <Component>
-      <StyledCarouselSingle />
+      <CarouselSingle />
       <Article>
         <h1>Pārdošanas teksts</h1>
         <p>
@@ -28,14 +28,15 @@ export default Hero;
 const Component = styled.section`
   position: relative;
   transition: all 0.2s ease;
+  inline-size: 100%;
   @media screen and (min-width: 868px) {
     margin: 0 0 0 60px;
     block-size: 700px;
   }
 `;
-const StyledCarouselSingle = styled(CarouselSingle)`
-  inline-size: 100%;
-`;
+// const StyledCarouselSingle = styled(CarouselSingle)`
+//   inline-size: 100%;
+// `;
 const Article = styled.article`
   position: absolute;
   bottom: 0;

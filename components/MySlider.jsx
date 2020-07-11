@@ -9,6 +9,7 @@ const MySlider = props => {
         backgroundSize: props.backgroundSize,
         backgroundColor: props.backgroundColor,
         border: props.border,
+        inlineSize: props.inlineSize,
       }}
     />
   );
