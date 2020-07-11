@@ -28,7 +28,7 @@ export default Hero;
 const Component = styled.section`
   position: relative;
   transition: all 0.2s ease;
-  inline-size: 100%;
+  max-inline-size: 100%;
   @media screen and (min-width: 868px) {
     margin: 0 0 0 60px;
     block-size: 700px;
