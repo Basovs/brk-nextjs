@@ -1,12 +1,17 @@
 import styled from "styled-components";
 import Btn from "./Btn";
 import CarouselSingle from "./CarouselSingle";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <Component>
       <CarouselSingle />
-      <Article>
+      <Article
+        initial={{ x: 600, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <h1>Pārdošanas teksts</h1>
         <p>
           Curabitur sollicitudin velit sit amet risus pellentesque gravida. In
@@ -37,7 +42,7 @@ const Component = styled.section`
 // const StyledCarouselSingle = styled(CarouselSingle)`
 //   inline-size: 100%;
 // `;
-const Article = styled.article`
+const Article = styled(motion.article)`
   position: absolute;
   bottom: 0;
   right: 0;

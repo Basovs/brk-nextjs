@@ -1,31 +1,48 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const InfoBar = () => {
   return (
     <Component>
       <Wrapper>
-        <Card>
+        <Card
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.45, duration: 0.5 }}
+        >
           <img src="/phoneIcon.svg" alt="Call us" />
           <Article>
             <h2>+371 2 777 777</h2>
             <p>P-PK 08:00-17:00</p>
           </Article>
         </Card>
-        <Card>
+        <Card
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.55, duration: 0.5 }}
+        >
           <img src="/mapIcon.svg" alt="Find us" />
           <Article>
             <h2>Madonas iela 27</h2>
             <p>Jēkabpils</p>
           </Article>
         </Card>
-        <Card>
+        <Card
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.65, duration: 0.5 }}
+        >
           <img src="/mailIcon.svg" alt="Mail us" />
           <Article>
             <h2>info@brk.lv</h2>
             <p>Raksti mums</p>
           </Article>
         </Card>
-        <Card>
+        <Card
+          initial={{ y: 200, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.75, duration: 0.5 }}
+        >
           <img src="/facebookIcon.svg" alt="Facebook us" />
           <Article>
             <h2>Facebook</h2>
@@ -68,7 +85,7 @@ const Wrapper = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(250px, 267.5px));
   }
 `;
-const Card = styled.div`
+const Card = styled(motion.div)`
   display: flex;
 
   img {

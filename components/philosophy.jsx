@@ -1,11 +1,17 @@
 import styled from "styled-components";
 import Btn from "./Btn";
+import { motion } from "framer-motion";
 
 const PhilosophySection = () => {
   return (
     <Component>
       <Wrapper>
-        <Article className="animate__animated animate__bounce">
+        <Article
+          className="animate__animated animate__bounce"
+          initial={{ x: -200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.95, duration: 0.5 }}
+        >
           <p>FILOZOFIJA</p>
           <h2>We Build Our Projects With Your Dreams Project And Ideas.</h2>
           <p>
@@ -19,7 +25,11 @@ const PhilosophySection = () => {
           </p>
           <Btn href="/philosophy">LASĪT VAIRĀK</Btn>
         </Article>
-        <ImgGrid />
+        <ImgGrid
+          initial={{ x: 200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.95, duration: 0.5 }}
+        />
       </Wrapper>
     </Component>
   );
@@ -48,7 +58,7 @@ const Wrapper = styled.div`
     justify-content: space-between;
   }
 `;
-const Article = styled.article`
+const Article = styled(motion.article)`
   inline-size: 100%;
   max-inline-size: 540px;
   background-color: #fff;
@@ -72,7 +82,7 @@ const Article = styled.article`
     line-height: 30px;
   }
 `;
-const ImgGrid = styled.div`
+const ImgGrid = styled(motion.div)`
   inline-size: 100%;
   block-size: 300px;
 

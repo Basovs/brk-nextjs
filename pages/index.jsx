@@ -31,6 +31,11 @@ const Index = () => {
         <Partners />
         <Footer />
       </Layout>
+      <style jsx global>{`
+        html {
+          overflow-x: hidden;
+        }
+      `}</style>
     </>
   );
 };
