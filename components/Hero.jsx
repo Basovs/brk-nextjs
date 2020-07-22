@@ -7,11 +7,7 @@ const Hero = () => {
   return (
     <Component>
       <CarouselSingle />
-      <Article
-        initial={{ x: 600, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
+      <Article>
         <h1>Pārdošanas teksts</h1>
         <p>
           Curabitur sollicitudin velit sit amet risus pellentesque gravida. In
