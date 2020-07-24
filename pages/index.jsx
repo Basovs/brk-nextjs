@@ -43,7 +43,7 @@ const Index = () => {
         }
         html {
           background: #fff;
-          overflow-x: hidden;
+          overflow-x: hidden !important;
         }
 
         * {
