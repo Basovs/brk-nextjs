@@ -25,9 +25,9 @@ const PhilosophySection = () => {
           <Btn href="/philosophy">LASĪT VAIRĀK</Btn>
         </Article>
         <ImgGrid
-          initial={{ x: 200, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.95, duration: 0.5 }}
+        // initial={{ x: 200, opacity: 0 }}
+        // animate={{ x: 0, opacity: 1 }}
+        // transition={{ delay: 0.95, duration: 0.5 }}
         />
       </Wrapper>
     </Component>
